@@ -20,3 +20,15 @@ class Car extends Vehicle {
         return 4;
     }
 }
+
+class Motorcycle extends Vehicle {
+    constructor(make, model, year) {
+        super(make, model, year);
+    }
+    numWheels() {
+        return 2;
+    }
+    revEngine() {
+        return "VROOM!!!"
+    }
+}

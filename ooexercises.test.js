@@ -14,3 +14,12 @@ describe("Car Test", () => {
         expect(firstCar.numWheels()).toEqual(4);
     });
 });
+describe("Motorcycle Test", () => {
+    it("should test to see that vehicle was created, if it inherits everything and has 2 wheels", () => {
+        let firstBike = new Motorcycle("Ducati", "T-series", "2022");
+        expect(firstBike.honk()).toEqual("Beep.");
+        expect(firstBike.toString()).toEqual("The vehicle is a Ducati T-series from 2022.");
+        expect(firstBike.numWheels()).toEqual(2);
+        expect(firstBike.revEngine()).toEqual("VROOM!!!")
+    });
+});
