@@ -14,6 +14,7 @@ describe("Car Test", () => {
         expect(firstCar.numWheels).toEqual(4);
     });
 });
+
 describe("Motorcycle Test", () => {
     it("should test to see that vehicle was created, if it inherits everything and has 2 wheels", () => {
         let firstBike = new Motorcycle("Ducati", "T-series", "2022");
