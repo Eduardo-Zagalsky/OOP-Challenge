@@ -11,7 +11,7 @@ describe("Car Test", () => {
         let firstCar = new Car("Volkswagen", "Tiguan", "2022");
         expect(firstCar.honk()).toEqual("Beep.");
         expect(firstCar.toString()).toEqual("The vehicle is a Volkswagen Tiguan from 2022.");
-        expect(firstCar.numWheels()).toEqual(4);
+        expect(firstCar.numWheels).toEqual(4);
     });
 });
 describe("Motorcycle Test", () => {
@@ -19,7 +19,7 @@ describe("Motorcycle Test", () => {
         let firstBike = new Motorcycle("Ducati", "T-series", "2022");
         expect(firstBike.honk()).toEqual("Beep.");
         expect(firstBike.toString()).toEqual("The vehicle is a Ducati T-series from 2022.");
-        expect(firstBike.numWheels()).toEqual(2);
+        expect(firstBike.numWheels).toEqual(2);
         expect(firstBike.revEngine()).toEqual("VROOM!!!")
     });
 });
